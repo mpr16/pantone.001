@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {/* Tipografia del texto y el fondo del body*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e0cfbc;
+}
+p {
+  margin-bottom: 20px;
+}
+header{
+  width:100%;/*Cabezera ocupe el ancho de la pagina*/
+  height:auto;
+  background:white;
+  /*margin: auto;*/
+  left:0;/*Posicionamos al lado izquierdo*/
+  top:0;/*Pegado a arriba*/
+  position: fixed;/*Posicion fixa*/
+  
+ 
+}
+
+.logotip{/* Caja del logotipo*/
+  width:30%;
+  height:70px;
+  background: white;
+  float: left;
+}
+.logotip img{/*El logotip, y su tamaño*/
+  width: 250px;
+  height: 70px;
+  box-sizing: border-box;
+  margin-top: 1px;
+}
+nav ul{/*Caja de navegación*/
+ 
+   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;/*Contenido alfinal*/
+  list-style:none;
+    background: rgb(253, 253, 253);
+  /*padding-top: 25px;*/
+  margin:0;
+ 
+  }
+
+nav a{/*Contenido de la barra de navegación*/
+display: block;
+text-decoration: none; 
+/*align-items:center;
+margin: auto;*/
+padding: 1em;
+color:black;
+
+
+
+  
+}
+nav a:hover{/*Decoración de la barra de texto, con una linea*/
+  text-decoration: underline;
+ 
+}/*media querys para adaptar la barra de navegación en diferentes dispositivos*/
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+    
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding:0;
+    
+  }
+.nav li:last-of-type a{
+  border-bottom: none;
+}
+}
+
+main { /*Primera sección de la pàgina*/
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/*numero de columnes*/
+ grid-gap: 3em; 
+ margin: 2rem;
+ padding-top: 10em;
+ 
+}
+.titol h1{/*caracteristicas titulo h1*/
+  font-family: 'dancing script';
+color:black;
+text-align: center;
+margin: auto;
+
+}
+
+article {/*Caracteristicas de las columnas*/
+  display: flex;
+  flex-flow: column;
+  background: white;
+  padding: 2em;
+  border-radius: 5%;
+}
+h2{/*caracteristicas titulo h2*/
+  font-family: 'dancing script';
+    color:black;
+    text-align: center;
+}
+p {/*caracteristicas del texto o parrafo*/
+  margin: 2em;
+  text-align: justify;
+}
+.apunts{/*Nueva sección creada con grid y columnas*/
+  background-color: black;
+  display: grid;
+  grid-column: 2/3;
+  padding: 20px 60px;
+  grid-gap: 2em; 
+  width: auto;
+  height: auto;
+  padding-bottom: 10em;
+  
+}
+.apunts p { /*Caracteristicas del texto dentro de esta seccion*/
+  text-align: justify;
+  margin: 0em;
+  overflow:hidden;
+  color: white;
+  word-wrap: break-word;
+  padding-right: 4em;
+  padding-top: 2em;
+  padding-left: 4em;
+ 
+}
+.apunts h2{/*caracteristicas titulo h2 de esta sección*/
+  font-family: 'dancing script';
+  color:white;
+  font-size:20px;
+  padding-top: 8em;
+ /* padding-right: 1fr;*/
+  text-align: center; 
+}
+.apunts img{/*Caracteristicas de la imagen de esta sección*/
+  overflow: hidden;
+	margin: auto;
+  /*display:grid;*/
+  place-items: center;
+  width: 100%;
+  height:auto;
+  
+}
+/*Características del footer*/
+.content {
+  height: 70vh;
+}
+footer {
+  background-color: white;
+  color: black;
+  margin-top: 15px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+h2 {/*características del titulo h2*/
+  text-transform: uppercase;
+  color: black;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover {/*Decoración de linea inferior del texto*/
+  text-decoration: underline;
+}
+li{
+  list-style: none;
+  display: inline;
+  padding: 0 15px;
+}
+i{
+  margin-right: 15px;
+}
+hr{/*efectos de opacidad*/
+  opacity: 0.8;
+}
+.copyright{ 
+  padding: 1.2rem;
+  text-align: center;
+}
